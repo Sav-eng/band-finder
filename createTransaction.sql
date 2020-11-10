@@ -1,4 +1,4 @@
-CREATE TABLE Transaction(
+CREATE TABLE transaction(
   transactionId INT NOT NULL AUTO_INCREMENT,
   refNumber INT NOT NULL,
   bank VARCHAR(20) NOT NULL,

@@ -10,3 +10,9 @@ ALTER TABLE musician ADD CONSTRAINT fk_musician_userId FOREIGN KEY (userId) REFE
 ALTER TABLE musician ADD CONSTRAINT fk_musician_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId);
 ALTER TABLE musician_instrument ADD CONSTRAINT fk_musician_instrument_userId FOREIGN KEY (userId) REFERENCES musician(userId);
 ALTER TABLE musician_musicGenre ADD CONSTRAINT fk_musician_musicGenre_userId FOREIGN KEY (userId) REFERENCES musician(userId);
+ALTER TABLE band_musicGenre ADD CONSTRAINT fk_band_musicGenre_bandId FOREIGN KEY (bandId) REFERENCES band(bandId);
+ALTER TABLE join ADD CONSTRAINT fk_join_bandId FOREIGN KEY (bandId) REFERENCES band(bandId);
+ALTER TABLE join ADD CONSTRAINT fk_join_userId FOREIGN KEY (userId) REFERENCES musician(userId);
+ALTER TABLE make ADD CONSTRAINT fk_make_userIdSend FOREIGN KEY (userIdSend) REFERENCES user(userId);
+ALTER TABLE make ADD CONSTRAINT fk_make_userIdReceive FOREIGN KEY (userIdReceive) REFERENCES user(userId);
+ALTER TABLE make ADD CONSTRAINT fk_make_transactionID FOREIGN KEY (transactionID) REFERENCES transaction(transactionId);
