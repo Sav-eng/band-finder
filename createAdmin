@@ -1,0 +1,7 @@
+CREATE TABLE admin(
+  userId INT NOT NULL,
+  firstName VARCHAR(20) NOT NULL,
+  lastName VARCHAR(20) NOT NULL,
+  role VARCHAR(20) NOT NULL,
+  PRIMARY KEY (userId)
+);
