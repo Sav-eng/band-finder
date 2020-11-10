@@ -4,5 +4,6 @@ CREATE TABLE advertisement(
   numberOfView INT NOT NULL,
   startDate DATETIME NOT NULL,
   endDate DATETIME NOT NULL,
+  userId INT NOT NULL,
   PRIMARY KEY (advertisementId)
 );
