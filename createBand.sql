@@ -8,5 +8,5 @@ CREATE TABLE band(
   startDate DATE_TIME NOT NULL,
   endDate DATE_TIME,
   numberOfMembers INT NOT NULL,
-  PRIMARY KEY (userId)
+  PRIMARY KEY (bandId)
 );
