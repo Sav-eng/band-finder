@@ -1,6 +1,6 @@
 DELIMITER $$
 
-CREATE PROCEDURE getAllReviewByOrganizer(
+CREATE PROCEDURE getAllReviewByOrganizerId(
   IN organizerId INT
 )
 BEGIN
