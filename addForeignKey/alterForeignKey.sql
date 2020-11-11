@@ -6,6 +6,7 @@ ALTER TABLE admin ADD CONSTRAINT fk_admin_userId FOREIGN KEY (userId) REFERENCES
 ALTER TABLE music_associate ADD CONSTRAINT fk_music_associate_userId FOREIGN KEY (userId) REFERENCES user(userId);
 ALTER TABLE band_manager ADD CONSTRAINT fk_band_manager_userId FOREIGN KEY (userId) REFERENCES music_associate(userId);
 ALTER TABLE band ADD CONSTRAINT fk_band_userId FOREIGN KEY (userId) REFERENCES band_manager(userId);
+ALTER TABLE band ADD CONSTRAINT fk_band_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
 ALTER TABLE musician ADD CONSTRAINT fk_musician_userId FOREIGN KEY (userId) REFERENCES music_associate(userId);
 ALTER TABLE musician ADD CONSTRAINT fk_musician_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
 ALTER TABLE musician_instrument ADD CONSTRAINT fk_musician_instrument_userId FOREIGN KEY (userId) REFERENCES musician(userId) ON DELETE CASCADE;
