@@ -1,13 +1,13 @@
 INSERT INTO perform VALUES
-(NULL, 1234, 12345, 999, NULL);
+(NULL, 123, 123, 999, NULL);
 
 
 -- CREATE TABLE perform(
---   performanceId INT NOT NULL AUTO_INCREMENT,
+--   performId INT NOT NULL AUTO_INCREMENT,
 --   performerId INT NOT NULL,
 --   eventId INT NOT NULL,
 --   cost INT NOT NULL,
---   PRIMARY KEY (performanceId)
+--   PRIMARY KEY (performId)
 --   FOREIGN KEY (performerId) REFERENCE performer(performerId),
 --   FOREIGN KEY (eventId) REFERENCE event(eventId),
 -- );
