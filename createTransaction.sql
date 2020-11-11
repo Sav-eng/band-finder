@@ -4,6 +4,6 @@ CREATE TABLE transaction(
   bank VARCHAR(20) NOT NULL,
   date DATETIME NOT NULL,
   type VARCHAR(20) NOT NULL,
-  amount VARCHAR(20) NOT NULL,
+  amount int NOT NULL,
   PRIMARY KEY (transactionId)
 );

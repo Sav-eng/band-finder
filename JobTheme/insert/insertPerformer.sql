@@ -1,0 +1,2 @@
+INSERT INTO performer VALUES
+(1);
