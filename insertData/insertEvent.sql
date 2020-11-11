@@ -1,2 +1,2 @@
 INSERT INTO event VALUES
-(12345, 1234, 'event1', 'location1', 1, 'test', CURRENT_DATE);
+(123, 123, 'event1', 'location1', 1, 'test', CURRENT_DATE);
