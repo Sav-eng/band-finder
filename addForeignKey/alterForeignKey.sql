@@ -3,11 +3,11 @@ ALTER TABLE send ADD CONSTRAINT fk_send_userIdSend FOREIGN KEY (userIdSend) REFE
 ALTER TABLE send ADD CONSTRAINT fk_send_userIdReceieve FOREIGN KEY (userIdReceieve) REFERENCES user(userId);
 ALTER TABLE send ADD CONSTRAINT fk_send_chatId FOREIGN KEY (chatId) REFERENCES chat(chatId) ON DELETE CASCADE;
 ALTER TABLE admin ADD CONSTRAINT fk_admin_userId FOREIGN KEY (userId) REFERENCES user(userId);
-ALTER TABLE music_associate ADD CONSTRAINT fk_music_associate_userId FOREIGN KEY (userId) REFERENCES user(userId);
-ALTER TABLE band_manager ADD CONSTRAINT fk_band_manager_userId FOREIGN KEY (userId) REFERENCES music_associate(userId);
-ALTER TABLE band ADD CONSTRAINT fk_band_userId FOREIGN KEY (userId) REFERENCES band_manager(userId);
+ALTER TABLE musicAssociate ADD CONSTRAINT fk_musicAssociate_userId FOREIGN KEY (userId) REFERENCES user(userId);
+ALTER TABLE bandManager ADD CONSTRAINT fk_bandManager_userId FOREIGN KEY (userId) REFERENCES musicAssociate(userId);
+ALTER TABLE band ADD CONSTRAINT fk_band_userId FOREIGN KEY (userId) REFERENCES bandManager(userId);
 ALTER TABLE band ADD CONSTRAINT fk_band_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
-ALTER TABLE musician ADD CONSTRAINT fk_musician_userId FOREIGN KEY (userId) REFERENCES music_associate(userId);
+ALTER TABLE musician ADD CONSTRAINT fk_musician_userId FOREIGN KEY (userId) REFERENCES musicAssociate(userId);
 ALTER TABLE musician ADD CONSTRAINT fk_musician_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
 ALTER TABLE musician_instrument ADD CONSTRAINT fk_musician_instrument_userId FOREIGN KEY (userId) REFERENCES musician(userId) ON DELETE CASCADE;
 ALTER TABLE musician_musicGenre ADD CONSTRAINT fk_musician_musicGenre_userId FOREIGN KEY (userId) REFERENCES musician(userId) ON DELETE CASCADE;

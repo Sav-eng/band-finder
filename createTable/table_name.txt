@@ -3,8 +3,8 @@ Chat
 Send
 Advertisement
 Admin
-music_associate
-band_manager
+musicAssociate
+bandManager
 musician
 band
 musician_instrument
