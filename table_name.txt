@@ -2,3 +2,8 @@ User
 Chat
 Send
 Advertisement
+Admin
+music_associate
+band_manager
+musician
+band
