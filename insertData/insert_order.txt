@@ -1,1 +1,5 @@
 User
+admin
+music_associate
+band_manager
+band
