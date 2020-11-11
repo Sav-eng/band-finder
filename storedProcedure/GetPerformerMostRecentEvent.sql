@@ -1,6 +1,6 @@
 DELIMITER $$
 
-CREATE PROCEDURE GetPerformerMostRecentEvent(
+CREATE PROCEDURE getPerformerMostRecentEvent(
   IN performerId INT
 )
 BEGIN
