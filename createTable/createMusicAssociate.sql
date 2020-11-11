@@ -1,4 +1,4 @@
-CREATE TABLE music_associate(
+CREATE TABLE musicAssociate(
   userId INT NOT NULL,
   firstName VARCHAR(20) NOT NULL,
   lastName VARCHAR(20) NOT NULL,
