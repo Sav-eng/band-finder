@@ -7,4 +7,4 @@ CREATE TABLE deletedPerform(
 
 CREATE TRIGGER deletePerformTrigger AFTER DELETE ON perform
 FOR EACH ROW 
-INSERT INTO deletedPerform VALUES(USER(), NEW.performerId, NEW.eventId, NOW());
+INSERT INTO deletedPerform VALUES(performId, performerId, eventId, NOW());
