@@ -1,5 +1,5 @@
 CREATE TABLE deletedPerform(
-	userId INT NOT NULL,
+    username VARCHAR(20),
     performerId INT NOT NUll,
     eventId INT NOT NULL,
     execTime DATETIME NOT NULL
@@ -7,4 +7,4 @@ CREATE TABLE deletedPerform(
 
 CREATE TRIGGER deletePerformTrigger AFTER DELETE ON perform
 FOR EACH ROW 
-INSERT INTO deletedPerform VALUES(userId, performerId, eventId, NOW());
+INSERT INTO deletedPerform VALUES(USER(), OLD.performerId, OLD.eventId, NOW());
