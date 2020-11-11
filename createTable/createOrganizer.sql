@@ -1,5 +1,5 @@
 CREATE TABLE oragnizer(
-  userId INT NOT NULL,
+  userId INT NOT NULL AUTO_INCREMENT,
   name VARCHAR(20) NOT NULL,
   description TEXT,
   PRIMARY KEY (userId)
