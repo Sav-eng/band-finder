@@ -1,10 +1,10 @@
 CREATE TABLE event(
   eventId INT NOT NULL AUTO_INCREMENT,
   userId INT NOT NULL
-  name VARCHAR(50) NOT NULL,
-  location VARCHAR(500) NOT NULL,
-  ticketPrice INT NOT NULL,
-  description VARCHAR(500) NOT NULL,
+  name VARCHAR(20) NOT NULL,
+  location VARCHAR(100) NOT NULL,
+  ticketPrice FLOAT(24),
+  description TEXT,
   date DATETIME NOT NULL,
   PRIMARY KEY (eventId),
   FOREIGN KEY (userId) REFERENCE organizer(userId) ON DELETE CASCADE
