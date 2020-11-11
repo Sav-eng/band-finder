@@ -1,8 +1,8 @@
-CREATE TABLE join(
+CREATE TABLE joint(
   bandId INT NOT NULL,
   userId INT NOT NULL,
   status VARCHAR(20) NOT NULL,
-  startDate DATE_TIME,
-  endDate DATE_TIME,
+  startDate DATETIME,
+  endDate DATETIME,
   PRIMARY KEY (bandId, userId)
 );
