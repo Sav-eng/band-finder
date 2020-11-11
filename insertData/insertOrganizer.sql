@@ -1,2 +1,4 @@
 INSERT INTO organizer VALUES
-(123, 'organizer1', 'test');
+(1, 'organizer1', 'test'),
+(2, 'organizer2', 'test'),
+(3, 'organizer3', 'test');
