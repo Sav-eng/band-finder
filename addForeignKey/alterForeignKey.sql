@@ -17,3 +17,8 @@ ALTER TABLE joint ADD CONSTRAINT fk_join_userId FOREIGN KEY (userId) REFERENCES 
 ALTER TABLE make ADD CONSTRAINT fk_make_userIdSend FOREIGN KEY (userIdSend) REFERENCES user(userId);
 ALTER TABLE make ADD CONSTRAINT fk_make_userIdReceive FOREIGN KEY (userIdReceive) REFERENCES user(userId);
 ALTER TABLE make ADD CONSTRAINT fk_make_transactionID FOREIGN KEY (transactionID) REFERENCES transaction(transactionId) ON DELETE CASCADE;
+ALTER TABLE event ADD CONSTRAINT fk_event_userId FOREIGN KEY (userId) REFERENCES organizer(userId) ON DELETE CASCADE;
+ALTER TABLE review ADD CONSTRAINT fk_review_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
+ALTER TABLE review ADD CONSTRAINT fk_review_userId FOREIGN KEY (userId) REFERENCES organizer(userId);
+ALTER TABLE perform ADD CONSTRAINT fk_perform_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
+ALTER TABLE perform ADD CONSTRAINT fk_perform_eventId FOREIGN KEY (eventId) REFERENCES event(eventId) ON DELETE CASCADE;
