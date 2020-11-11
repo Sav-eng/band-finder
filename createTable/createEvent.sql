@@ -6,6 +6,5 @@ CREATE TABLE event(
   ticketPrice FLOAT(24),
   description TEXT,
   date DATETIME NOT NULL,
-  PRIMARY KEY (eventId),
-  FOREIGN KEY (userId) REFERENCE organizer(userId) ON DELETE CASCADE
+  PRIMARY KEY (eventId)
 );

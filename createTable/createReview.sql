@@ -7,7 +7,5 @@ CREATE TABLE review(
   score TINYINT NOT NULL,
   type VARCHAR(30) NOT NULL,
   timeDate DATETIME NOT NULL,
-  PRIMARY KEY (reviewId),
-  FOREIGN KEY (performerId) REFERENCE performer(performerId),
-  FOREIGN KEY (userId) REFERENCE organizer(userId),
+  PRIMARY KEY (reviewId)
 );

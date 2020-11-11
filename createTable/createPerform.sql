@@ -5,6 +5,4 @@ CREATE TABLE perform(
   cost INT NOT NULL,
   isPerformerPerformed BOOLEAN DEFAULT FALSE NOT NULL,
   PRIMARY KEY (performId)
-  FOREIGN KEY (performerId) REFERENCE performer(performerId),
-  FOREIGN KEY (eventId) REFERENCE event(eventId),
 );
