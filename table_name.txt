@@ -7,3 +7,5 @@ music_associate
 band_manager
 musician
 band
+musician_instrument
+musician_musicGenre
