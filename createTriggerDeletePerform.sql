@@ -1,4 +1,4 @@
-CREATE TABLE deleteTracsaction(
+CREATE TABLE deletedPerform(
 	userId INT NOT NULL,
     performerId INT NOT NUll,
     eventId INT NOT NULL,
@@ -7,4 +7,4 @@ CREATE TABLE deleteTracsaction(
 
 CREATE TRIGGER deletePerformTrigger AFTER DELETE ON perform
 FOR EACH ROW 
-INSERT INTO deletePerformTrigger VALUES(USER(), NEW.performerId, NEW.eventId, NOW());
+INSERT INTO deletedPerform VALUES(USER(), NEW.performerId, NEW.eventId, NOW());
