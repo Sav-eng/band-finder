@@ -1,5 +1,5 @@
 INSERT INTO perform VALUES
-(NULL, 123, 123, 999, NULL);
+(NULL, 123, 123, 999, false);
 
 
 -- CREATE TABLE perform(
