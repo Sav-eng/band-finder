@@ -1,2 +1,2 @@
-INSERT INTO band_manager VALUES
+INSERT INTO bandManager VALUES
 (1);

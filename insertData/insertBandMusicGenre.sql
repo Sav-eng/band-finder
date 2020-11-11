@@ -1,3 +1,3 @@
-INSERT INTO band_musicGenre VALUES
+INSERT INTO bandMusicGenre VALUES
 (1,"lo-fi"),
 (1,"classic");
