@@ -1,5 +1,5 @@
 CREATE TABLE deletedPerform(
-    username VARCHAR(20),
+    username VARCHAR(64),
     performerId INT NOT NUll,
     eventId INT NOT NULL,
     execTime DATETIME NOT NULL
