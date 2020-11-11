@@ -1,2 +1,2 @@
 INSERT INTO performer VALUES
-(NULL);
+(123);

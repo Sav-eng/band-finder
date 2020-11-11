@@ -1,5 +1,5 @@
 INSERT INTO review VALUES
-(NULL, 123, 123, 3, 'review message', 123, 'sometype', CURRENT_DATE);
+(123, 123, 123, 3, 'review message', 123, 'sometype', CURRENT_DATE);
 
 -- CREATE TABLE review(
 --   reviewId INT NOT NULL AUTO_INCREMENT,
