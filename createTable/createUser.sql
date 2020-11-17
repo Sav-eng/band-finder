@@ -4,7 +4,7 @@ CREATE TABLE user(
   profilePicture VARCHAR(256) NOT NULL,
   password VARCHAR(256) NOT NULL,
   creditCardNumber VARCHAR(16) DEFAULT NULL,
-  telephoneNO VARCHAR(16) NOT NULL,
+  telephoneNo VARCHAR(16) NOT NULL,
   isDeleted BOOLEAN DEFAULT FALSE NOT NULL,
   PRIMARY KEY (userId)
 );
