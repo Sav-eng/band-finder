@@ -20,3 +20,4 @@ ALTER TABLE review ADD CONSTRAINT fk_review_performerId FOREIGN KEY (performerId
 ALTER TABLE review ADD CONSTRAINT fk_review_userId FOREIGN KEY (userId) REFERENCES organizer(userId);
 ALTER TABLE perform ADD CONSTRAINT fk_perform_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
 ALTER TABLE perform ADD CONSTRAINT fk_perform_eventId FOREIGN KEY (eventId) REFERENCES event(eventId) ON DELETE CASCADE;
+ALTER TABLE musicGenres ADD CONSTRAINT fk_musicGenres_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId);
