@@ -10,8 +10,6 @@ ALTER TABLE band ADD CONSTRAINT fk_band_performerId FOREIGN KEY (performerId) RE
 ALTER TABLE musician ADD CONSTRAINT fk_musician_userId FOREIGN KEY (userId) REFERENCES musicAssociate(userId);
 ALTER TABLE musician ADD CONSTRAINT fk_musician_performerId FOREIGN KEY (performerId) REFERENCES performer(performerId) ON DELETE CASCADE;
 ALTER TABLE musicianInstrument ADD CONSTRAINT fk_musicianInstrument_userId FOREIGN KEY (userId) REFERENCES musician(userId) ON DELETE CASCADE;
-ALTER TABLE musicianMusicGenre ADD CONSTRAINT fk_musicianMusicGenre_userId FOREIGN KEY (userId) REFERENCES musician(userId) ON DELETE CASCADE;
-ALTER TABLE bandMusicGenre ADD CONSTRAINT fk_bandMusicGenre_bandId FOREIGN KEY (bandId) REFERENCES band(bandId) ON DELETE CASCADE;
 ALTER TABLE joint ADD CONSTRAINT fk_join_bandId FOREIGN KEY (bandId) REFERENCES band(bandId) ON DELETE CASCADE;
 ALTER TABLE joint ADD CONSTRAINT fk_join_userId FOREIGN KEY (userId) REFERENCES musician(userId);
 ALTER TABLE make ADD CONSTRAINT fk_make_userIdSend FOREIGN KEY (userIdSend) REFERENCES user(userId);
