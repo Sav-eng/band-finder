@@ -4,13 +4,12 @@ Advertisement
 Chat 
 Send
 MusicAssociate
-Performer      
+Performer    
+MusicGenre  
 BandManager
 Musician
 MusicianInstrument
-MusicianMusicGenre
 Band
-BandMusicGenre
 Join 
 Organizer
 Event
