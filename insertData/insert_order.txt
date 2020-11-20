@@ -5,12 +5,11 @@ Chat
 Send
 MusicAssociate
 Performer      
+MusicGenre
 BandManager
 Musician
 MusicianInstrument
-MusicianMusicGenre
 Band
-BandMusicGenre
 Join 
 Organizer
 Event

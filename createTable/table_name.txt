@@ -2,7 +2,6 @@ Admin
 Advertisement
 Band
 BandManager
-BandMusicGenre
 Chat
 Event
 Join
@@ -10,7 +9,7 @@ Make
 MusicAssociate
 Musician
 MusicianInstrument
-MusicianMusicGenre
+MusicGenre
 Organizer
 Perform
 Performer
