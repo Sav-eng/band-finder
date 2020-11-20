@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Way Back into Love",
+    "performer": [ "Hugh Grant", "Haley Bennett" ],
+    "duration": "4:39",
+    "album": "Music and Lyrics: Music from the Motion Picture",
+    "songWriter": [ "Adam Schlesinger" ],
+    "musicGenre": [ "Pop" ]
+  },
+  {
+    "name": "How Deep Is Your Love",
+    "performer": [ "Bee Gees" ],
+    "duration": "4:05",
+    "album": "Saturday Night Fever",
+    "songWriter": [ "Barry Gibb", "Robin Gibb", "Maurice Gibb" ],
+    "musicGenre": [ "Soft rock" ]
+  },
+  {
+    "name": "Smells Like Teen Spirit",
+    "performer": [ "Nirvana" ],
+    "duration": "5:01",
+    "album": "Nevermind",
+    "songWriter": [ "Kurt Cobain", "Krist Novoselic", "Dave Grohl" ],
+    "musicGenre": [ "Grunge", "Alterantive rock", "Hard rock" ]
+  },
+  {
+    "name": "Let It Be",
+    "performer": [ "the Beatles" ],
+    "duration": "4:03",
+    "album": "Let It Be",
+    "songWriter": [ "Lennon-McCartney" ],
+    "musicGenre": [ "Rock", "Pop", "Gospel" ]
+  },
+  {
+    "name": "Wonderwall",
+    "performer": [ "Oasis" ],
+    "duration": "4:19",
+    "album": "(What's the Story) Morning Glory?",
+    "songWriter": [ "Noel Gallagher" ],
+    "musicGenre": [ "Britpop" ]
+  }
+]
