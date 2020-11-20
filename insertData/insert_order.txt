@@ -10,7 +10,7 @@ BandManager
 Musician
 MusicianInstrument
 Band
-Join 
+Joint 
 Organizer
 Event
 Perform

@@ -4,7 +4,7 @@ Band
 BandManager
 Chat
 Event
-Join
+Joint
 Make
 MusicAssociate
 Musician
