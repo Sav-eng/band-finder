@@ -5,6 +5,7 @@ BandManager
 Chat
 Event
 Joint
+Location
 Make
 MusicAssociate
 Musician

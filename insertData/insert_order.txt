@@ -13,6 +13,7 @@ Band
 Joint 
 Organizer
 Event
+Location
 Perform
 Review
 Transaction

@@ -5,6 +5,6 @@ CREATE TABLE event(
   location VARCHAR(100) NOT NULL,
   ticketPrice FLOAT(24),
   description TEXT,
-  date DATETIME NOT NULL,
+  dateTime DATETIME NOT NULL,
   PRIMARY KEY (eventId)
 );
