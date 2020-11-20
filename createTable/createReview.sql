@@ -6,6 +6,6 @@ CREATE TABLE review(
   reviewMessage TEXT,
   score TINYINT NOT NULL,
   type VARCHAR(30) NOT NULL,
-  timeDate DATETIME NOT NULL,
+  dateTime DATETIME NOT NULL,
   PRIMARY KEY (reviewId)
 );

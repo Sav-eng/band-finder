@@ -13,6 +13,7 @@ band
 joint 
 organizer
 event
+location
 perform
 review
 transaction
