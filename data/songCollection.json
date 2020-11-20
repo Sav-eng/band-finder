@@ -38,5 +38,21 @@
     "album": "(What's the Story) Morning Glory?",
     "songWriter": [ "Noel Gallagher" ],
     "musicGenre": [ "Britpop" ]
+  },
+  {
+    "name": "Welcome to the Black Parade",
+    "performer": [ "My Chemical Romance" ],
+    "duration": "5:11",
+    "album": "The Black Parade",
+    "songWriter": [ "Bob Bryar", "Frank Iero", "Ray Toro", "Gerard Way", "Mikey Way" ],
+    "musicGenre": [ "Pop punk", "Emo", "Alternative rock" ]
+  },
+  {
+    "name": "Back to December",
+    "performer": [ "Taylor Swift" ],
+    "duration": "4:53",
+    "album": "Speak Now",
+    "songWriter": [ "Taylor Swift" ],
+    "musicGenre": [ "Country pop" ]
   }
 ]
