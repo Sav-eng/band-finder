@@ -1,8 +1,8 @@
 ﻿chatId,message,deteTime
 1,Hello,2020-11-20 12:00:00
 2,I would like to play at your RockNeverDie Club,2020-11-20 12:00:10
-3,"Okay, what are you favorite band",2020-11-20 12:30:00
-4,"Oasis, Green Day, Nirvana",2020-11-20 12:30:10
+3,Okay what are you favorite band,2020-11-20 12:30:00
+4,Oasis Green Day Nirvana,2020-11-20 12:30:10
 5,Cool your in. I can pay you 500 baht / day,2020-11-20 12:45:40
 6,Thank you !!!,2020-11-20 12:55:41
 7,Hello,2020-11-20 12:00:00
@@ -11,11 +11,11 @@
 10,Hi,2020-11-23 12:00:03
 11,Hello Would you like to play at FatchRadio Concert?,2020-11-24 12:00:03
 12,I listen to your song I really love it.,2020-11-24 12:00:30
-13,"Okay, How much can you pay me?",2020-11-24 12:10:31
-14,"5,000 baht",2020-11-24 12:12:32
+13,Okay How much can you pay me?,2020-11-24 12:10:31
+14,5000 baht,2020-11-24 12:12:32
 15,That's not enough!,2020-11-24 12:13:33
-16,"Then 7,500 bath",2020-11-24 12:14:34
+16,Then 7500 bath,2020-11-24 12:14:34
 17,No I can't accept that,2020-11-24 12:15:35
-18,"15,000 No more negotiation",2020-11-24 12:15:45
+18,15000 No more negotiation,2020-11-24 12:15:45
 19,Can you reduce it to 13000,2020-11-24 12:20:46
 20,K Deal,2020-11-24 12:21:47
