@@ -4,9 +4,11 @@ FROM (
 		userId, 
 		name, 
 		score 
-	FROM user, organizer
+	FROM (
+		select userId,name
+		FROM user, organizer
+		WHERE user.userId = organizer.userId)
 		LEFT OUTER JOIN review
-	WHERE user.userId = organizer.userId
 	GROUP BY userId
 	ORDER BY sum(score) DESC) as mapped,
 	advertisement
