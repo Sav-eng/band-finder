@@ -6,7 +6,7 @@ CREATE TABLE band(
   status VARCHAR(20) NOT NULL,
   description TEXT,
   startDate DATETIME NOT NULL,
-  endDate DATETIME,
+  endDate DATETIME DEFAULT NULL,
   numberOfMembers INT NOT NULL,
   PRIMARY KEY (bandId)
 );
