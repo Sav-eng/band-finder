@@ -12,8 +12,8 @@ musicianInstrument
 band
 joint 
 organizer
-event
 location
+event
 perform
 review
 transaction

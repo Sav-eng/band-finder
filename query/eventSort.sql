@@ -12,4 +12,9 @@ FROM (
 	GROUP BY organizerId
 	ORDER BY avg(score) DESC) as mapped
 	LEFT OUTER JOIN advertisement on organizerId = advertisement.userId
+<<<<<<< HEAD
+=======
+WHERE NOW() BETWEEN startDate AND endDate
+GROUP BY userId
+>>>>>>> 3b0886acfacdcd3b523b35dfbaefb92efdb2b35a
 ORDER BY price DESC;
