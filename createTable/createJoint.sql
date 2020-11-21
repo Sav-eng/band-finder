@@ -2,7 +2,7 @@ CREATE TABLE joint(
   bandId INT NOT NULL,
   userId INT NOT NULL,
   status VARCHAR(20) NOT NULL,
-  startDate DATETIME,
-  endDate DATETIME,
+  startDate DATETIME DEFAULT NULL,
+  endDate DATETIME DEFAULT NULL,
   PRIMARY KEY (bandId, userId)
 );
