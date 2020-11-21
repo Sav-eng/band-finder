@@ -10,7 +10,7 @@ FROM (
 		WHERE user.userId = organizer.userId) as organizerUser
 		LEFT OUTER JOIN review on organizerId = review.userId
 	GROUP BY organizerId
-	ORDER BY avg(score) DESC) as mapped,
+	ORDER BY avg(score) DESC) as mapped
 	LEFT OUTER JOIN advertisement on organizerId = advertisement.userId
 WHERE NOW() BETWEEN startDate AND endDate
 GROUP BY userId
