@@ -1,6 +1,6 @@
 CREATE TABLE transaction(
   transactionId INT NOT NULL AUTO_INCREMENT,
-  refNumber INT NOT NULL,
+  refNumber VARCHAR(20) NOT NULL,
   bank VARCHAR(20) NOT NULL,
   dateTime DATETIME NOT NULL,
   type VARCHAR(20) NOT NULL,
