@@ -1,4 +1,4 @@
-SELECT name, avgScore
+SELECT organizerId,name, avgScore
 FROM (
 	SELECT 
 		organizerId, 
@@ -11,8 +11,5 @@ FROM (
 		LEFT OUTER JOIN review on organizerId = review.userId
 	GROUP BY organizerId
 	ORDER BY avg(score) DESC) as mapped
-	LEFT OUTER JOIN advertisement on organizerId = advertisement.userId
-WHERE NOW() BETWEEN startDate AND endDate
-GROUP BY userId
+	LEFT OUTER JOIN advertisement on organizerId = advertisement.userId AND NOW() BETWEEN startDate AND endDate
 ORDER BY price DESC;
-
