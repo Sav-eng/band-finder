@@ -1,7 +1,7 @@
 CREATE TABLE deletedTransaction(
 	username VARCHAR(64),
     transactionId INT NOT NULL,
-    refNumber INT NOT NULL,
+    refNumber VARCHAR(20) NOT NULL,
     bank VARCHAR(20) NOT NULL,
     execTime DATETIME NOT NULL
 );
