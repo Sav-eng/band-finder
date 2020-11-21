@@ -10,7 +10,7 @@ FROM (
 		WHERE user.userId = organizer.userId)
 		LEFT OUTER JOIN review
 	GROUP BY userId
-	ORDER BY sum(score) DESC) as mapped,
+	ORDER BY avg(score) DESC) as mapped,
 	advertisement
 WHERE mapped.userId = advertisement.userId AND CURRENT_DATE BETWEEN startDate AND endDate
 GROUP BY userId
