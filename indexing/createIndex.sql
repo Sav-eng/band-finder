@@ -1,0 +1,1 @@
+CREATE INDEX eventIndex BTREE ON event(dateTime, latitude, longitude)

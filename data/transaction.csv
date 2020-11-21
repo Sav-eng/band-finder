@@ -1,0 +1,6 @@
+﻿transactionId,refNumber,bank,dateTime,type,amount
+1,1.25487E+16,kasikorn thai bank,2020-11-20 12:00:00,advertisement,5000
+2,1.05781E+16,SCB bank,2020-12-30 15:30:00,payment,10000
+3,3.54812E+17,kasikorn thai bank,2021-01-05 16:00:00,payment,5000
+4,8.79549E+17,krung thai bank,2021-01-10 20:21:00,payment,7800
+5,6.85725E+17,krungsri bank,2021-02-02 10:15:00,payment,9900

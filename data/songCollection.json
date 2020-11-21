@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Way Back into Love",
+    "artist": [ "Hugh Grant", "Haley Bennett" ],
+    "length": "4:39",
+    "album": "Music and Lyrics: Music from the Motion Picture",
+    "songWriter": [ "Adam Schlesinger" ],
+    "musicGenre": [ "Pop" ]
+  },
+  {
+    "name": "How Deep Is Your Love",
+    "artist": [ "Bee Gees" ],
+    "length": "4:05",
+    "album": "Saturday Night Fever",
+    "songWriter": [ "Barry Gibb", "Robin Gibb", "Maurice Gibb" ],
+    "musicGenre": [ "Soft rock" ]
+  },
+  {
+    "name": "Smells Like Teen Spirit",
+    "artist": [ "Nirvana" ],
+    "length": "5:01",
+    "album": "Nevermind",
+    "songWriter": [ "Kurt Cobain", "Krist Novoselic", "Dave Grohl" ],
+    "musicGenre": [ "Grunge", "Alterantive rock", "Hard rock" ]
+  },
+  {
+    "name": "Let It Be",
+    "artist": [ "the Beatles" ],
+    "length": "4:03",
+    "album": "Let It Be",
+    "songWriter": [ "Lennon-McCartney" ],
+    "musicGenre": [ "Rock", "Pop", "Gospel" ]
+  },
+  {
+    "name": "Wonderwall",
+    "artist": [ "Oasis" ],
+    "length": "4:19",
+    "album": "(What's the Story) Morning Glory?",
+    "songWriter": [ "Noel Gallagher" ],
+    "musicGenre": [ "Britpop" ]
+  },
+  {
+    "name": "Welcome to the Black Parade",
+    "artist": [ "My Chemical Romance" ],
+    "length": "5:11",
+    "album": "The Black Parade",
+    "songWriter": [ "Bob Bryar", "Frank Iero", "Ray Toro", "Gerard Way", "Mikey Way" ],
+    "musicGenre": [ "Pop punk", "Emo", "Alternative rock" ]
+  },
+  {
+    "name": "Back to December",
+    "artist": [ "Taylor Swift" ],
+    "length": "4:53",
+    "album": "Speak Now",
+    "songWriter": [ "Taylor Swift" ],
+    "musicGenre": [ "Country pop" ]
+  },
+  {
+    "name": "21 Guns",
+    "artist": [ "Green Day" ],
+    "length": "5:21",
+    "album": "21st Century Breakdown",
+    "songWriter": [ "Billie Joe Armstrong", "Mike Dirnt", "Frank Edwin Wright III" ],
+    "musicGenre": [ "Alternative rock" ]
+  },
+  {
+    "name": "Everything at Once",
+    "artist": [ "Lenka" ],
+    "length": "2:38",
+    "album": "Two",
+    "songWriter": [ "Lenka Kripac" ],
+    "musicGenre": [ "Pop" ]
+  },
+  {
+    "name": "Archie, Marry Me",
+    "artist": [ "Alvvays" ],
+    "length": "3:17",
+    "album": "Alvvays",
+    "songWriter": [ "Alec O'Hanley", "Molly Rankin" ],
+    "musicGenre": [ "Indie pop" ]
+  }
+]

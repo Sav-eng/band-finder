@@ -1,0 +1,10 @@
+CREATE TABLE user(
+  userId INT NOT NULL AUTO_INCREMENT,
+  email VARCHAR(50) NOT NULL,
+  profilePicture VARCHAR(256) NOT NULL,
+  password VARCHAR(256) NOT NULL,
+  creditCardNumber VARCHAR(16) DEFAULT NULL,
+  telephoneNo VARCHAR(11) NOT NULL,
+  isDeleted BOOLEAN DEFAULT FALSE NOT NULL,
+  PRIMARY KEY (userId)
+);
