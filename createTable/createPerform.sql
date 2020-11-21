@@ -3,6 +3,6 @@ CREATE TABLE perform(
   eventId INT NOT NULL,
   cost INT NOT NULL,
   isPerformerPerformed BOOLEAN DEFAULT FALSE NOT NULL,
-  PRIMARY KEY (performId),
+  PRIMARY KEY (performerId),
   PRIMARY KEY (eventId)
 );
