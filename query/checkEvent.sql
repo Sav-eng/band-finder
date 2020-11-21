@@ -1,17 +1,18 @@
-SELECT userId, eventId, date
-FROM (SELECT userId, eventId, date
+SELECT userId as musicianId, name as eventName, dateTime as eventDateTime
+FROM (SELECT musician.userId, event.name, dateTime
 	FROM musician
-	NATURAL JOIN PERFORMER
-	NATURAL JOIN PERFORM
-	NATURAL JOIN EVENT
-	WHERE NOW() < date
+	NATURAL JOIN performer
+	NATURAL JOIN perform
+	,EVENT
+	WHERE perform.eventId = event.eventId AND NOW() < dateTime
 	UNION
-	SELECT userId, eventId, date
+	SELECT musician.userId, event.name, dateTime
 	FROM musician
 	NATURAL JOIN joint
-	NATURAL JOIN band
-	NATURAL JOIN PERFORMER
-	NATURAL JOIN PERFORM
-	NATURAL JOIN EVENT
-	WHERE NOW() < date
-	GROUP BY userId)
+	,band
+	NATURAL JOIN performer
+	NATURAL JOIN perform
+	,event
+	WHERE joint.bandId = band.bandId AND joint.status = "joined" AND perform.eventId = event.eventId AND NOW() < dateTime
+	) as T
+order by userId;
