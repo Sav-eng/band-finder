@@ -12,6 +12,7 @@ FROM (
 	GROUP BY organizerId
 	ORDER BY avg(score) DESC) as mapped,
 	advertisement
-WHERE organizerId = advertisement.userId AND CURRENT_DATE BETWEEN startDate AND endDate
-GROUP BY organizerId
+WHERE organizerId = advertisement.userId AND NOW() BETWEEN startDate AND endDate
+GROUP BY userId
 ORDER BY price DESC;
+
