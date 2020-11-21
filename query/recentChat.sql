@@ -24,4 +24,4 @@ FROM(
 			AND reciever.userId = userIdReceive
 	) AS organizerToMusicAssociate NATURAL JOIN chat
 	GROUP BY senderId
-) AS recentOrganizerChat JOIN (send NATURAL JOIN chat) ON recentSendTime = dateTime;
+) AS recentOrganizerChat JOIN (send NATURAL JOIN chat) ON recentSendTime = dateTime AND organizerID = userIdSend;
