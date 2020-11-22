@@ -1,3 +1,4 @@
+DROP FUNCTION bandAge;
 DELIMITER $$
 CREATE FUNCTION bandAge(startDate DATETIME,endDate DATETIME)
 	RETURNS VARCHAR(256)
@@ -9,7 +10,7 @@ BEGIN
     DECLARE h int;
     DECLARE min int;
     DECLARE s int;
-	IF endDate is NULL THEN
+	IF endDate is NULL OR endDate = '0000-00-00 00:00:00' THEN
 		SET endDate = now();
 	END IF;
     SET s = TIMESTAMPDIFF(SECOND,startDate,endDate)%60;
