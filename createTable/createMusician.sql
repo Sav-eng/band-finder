@@ -1,5 +1,5 @@
 CREATE TABLE musician(
   userId INT NOT NULL,
-  performerId INT,
+  performerId INT NOT NULL,
   PRIMARY KEY (userId)
 );
