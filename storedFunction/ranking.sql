@@ -4,15 +4,15 @@ CREATE FUNCTION ranking(score float)
 	DETERMINISTIC
 BEGIN
 	DECLARE lvl varchar(10);
-	IF score > 4 THEN
+	IF score > 8 THEN
 		SET lvl = 'DIAMOND';
-	ELSEIF (score <=4 and score >3) THEN
+	ELSEIF (score <=8 and score >6) THEN
 		SET lvl = 'PLATINUM';
-	ELSEIF (score <=3 and score >2) THEN
+	ELSEIF (score <=6 and score >4) THEN
 		SET lvl = 'GOLD';
-	ELSEIF (score <=2 and score >1) THEN
+	ELSEIF (score <=4 and score >2) THEN
 		SET lvl = 'SILVER';
-	ELSEIF score <=1 THEN
+	ELSEIF score <=2 THEN
 		SET lvl = 'BRONZE';
 	END IF;
 	RETURN (lvl);
