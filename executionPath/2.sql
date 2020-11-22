@@ -6,5 +6,5 @@ WHERE C.userId IN
 	SELECT A.userId 
 	FROM musician A, joint B
 	WHERE A.userId = B.userId AND
-	B.bandId = 2
+	B.bandId = 2 AND B.status = 'joined'
 );
