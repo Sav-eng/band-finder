@@ -6,6 +6,6 @@ CREATE TABLE deletedTransaction(
     execTime DATETIME NOT NULL
 );
 
-CREATE TRIGGER deleteTransactionTrigger AFTER DELETE ON transaction
+CREATE TRIGGER deleteTransaction AFTER DELETE ON transaction
 FOR EACH ROW 
 INSERT INTO deletedTransaction VALUES(USER(), OLD.transactionId, OLD.refNumber, OLD.bank, NOW());
