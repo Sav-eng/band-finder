@@ -1,10 +1,9 @@
--- get firstname lastname of member in bandId 2
-SELECT firstname, lastname 
-FROM musicAssociate C
-WHERE C.userId IN 
-(
-	SELECT A.userId 
-	FROM musician A, joint B
-	WHERE A.userId = B.userId AND
-	B.bandId = 2 AND B.status = 'joined'
-);
+-- get firstname and lastname of member in bandId 1 or 2
+(SELECT firstname, lastname 
+FROM musicAssociate NATURAL JOIN musician NATURAL JOIN joint
+WHERE bandId=1 AND status = 'joined')
+UNION
+(SELECT firstname, lastname 
+FROM musicAssociate NATURAL JOIN musician NATURAL JOIN joint
+WHERE bandId=2 AND status = 'joined')
+;
