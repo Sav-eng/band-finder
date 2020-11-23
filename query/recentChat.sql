@@ -1,6 +1,6 @@
 SELECT 	
 	organizerID,
-    userIdReceive AS recentRecieverId,
+    userIdReceive AS recentReceiverId,
     recentSendTime
 FROM(
     SELECT 
@@ -9,7 +9,7 @@ FROM(
 	FROM(
 		SELECT 
 			sender.userId AS senderId, 
-			reciever.userId AS recieverId, 
+			receiver.userId AS receiverId, 
 			chatId
 		FROM(
 			SELECT userId 
@@ -18,10 +18,10 @@ FROM(
 		,(
 			SELECT userId 
 			FROM user NATURAL JOIN musicAssociate
-		) AS reciever
+		) AS receiver
 		,send
 		WHERE sender.userId = userIdSend 
-			AND reciever.userId = userIdReceive
+			AND receiver.userId = userIdReceive
 	) AS organizerToMusicAssociate NATURAL JOIN chat
 	GROUP BY senderId
 ) AS recentOrganizerChat JOIN (send NATURAL JOIN chat) ON recentSendTime = dateTime AND organizerID = userIdSend;
